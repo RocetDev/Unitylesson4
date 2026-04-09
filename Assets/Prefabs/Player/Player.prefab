@@ -9,9 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7608625438313869932}
-  - component: {fileID: 2241868728434989269}
   m_Layer: 0
-  m_Name: RacastPoint
+  m_Name: RaycastPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32,20 +31,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1363284300467122505}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2241868728434989269
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1153276978042015329}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa036cc76a81b624885c9020cc60ae05, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RaycastSelector
-  text: {fileID: 1676568193184751306}
-  rayDistance: 4
 --- !u!1 &3231945370595128914
 GameObject:
   m_ObjectHideFlags: 0
@@ -332,6 +317,7 @@ GameObject:
   - component: {fileID: 3028644051455141061}
   - component: {fileID: 5624759761681682473}
   - component: {fileID: 4211592670644334741}
+  - component: {fileID: 5238229157643818298}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -348,7 +334,7 @@ Transform:
   m_GameObject: {fileID: 8553002214056071405}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.95259, y: -0, z: -1.78687}
+  m_LocalPosition: {x: -0.11010051, y: 0.00000043223218, z: 2.0747108}
   m_LocalScale: {x: 1.2263, y: 1.435545, z: 1.2263}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -474,7 +460,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20418f2d707d0f1499fa14ae932d3290, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePlayer
-  inputAsset: {fileID: 0}
+  inputAsset: {fileID: -944628639613478452, guid: 289c1b55c9541489481df5cc06664110, type: 3}
   speed: 5
 --- !u!114 &4211592670644334741
 MonoBehaviour:
@@ -488,8 +474,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43a75085791f5db47b8f85f236c65d84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MouseLook
-  inputAsset: {fileID: 0}
+  inputAsset: {fileID: -944628639613478452, guid: 289c1b55c9541489481df5cc06664110, type: 3}
   mouseSensitivity: 0.8
+--- !u!114 &5238229157643818298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8553002214056071405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa036cc76a81b624885c9020cc60ae05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RaycastSelector
+  inputAsset: {fileID: -944628639613478452, guid: 289c1b55c9541489481df5cc06664110, type: 3}
+  text: {fileID: 1676568193184751306}
+  rayDistance: 5
+  raycastPoint: {fileID: 7608625438313869932}
 --- !u!1 &8764053941206479595
 GameObject:
   m_ObjectHideFlags: 0

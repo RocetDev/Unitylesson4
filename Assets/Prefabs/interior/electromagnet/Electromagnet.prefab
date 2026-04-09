@@ -278,6 +278,7 @@ GameObject:
   - component: {fileID: 3826141183659160183}
   - component: {fileID: 7331898069821155901}
   - component: {fileID: 3572388600694099022}
+  - component: {fileID: 4583134576938876822}
   m_Layer: 0
   m_Name: ElemElectroMagnetCollider
   m_TagString: Untagged
@@ -334,6 +335,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractableHelper
   objectName: "\u042D\u043B\u0435\u043A\u0442\u0440\u043E\u043C\u0430\u0433\u043D\u0438\u0442"
+--- !u!114 &4583134576938876822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2560536426374300500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eddb19101b4fe9042bc31c070d24d34d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MagnetField
+  radius: 1
+  force: 100
+  flag: 0
 --- !u!1 &3220536140995886375
 GameObject:
   m_ObjectHideFlags: 0
@@ -343,8 +359,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3604777224019665787}
-  - component: {fileID: 7865584726620063717}
   - component: {fileID: 1946198546267694820}
+  - component: {fileID: 647720863697021843}
   m_Layer: 0
   m_Name: ElemKeyCollider
   m_TagString: Untagged
@@ -367,20 +383,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 7121762346267723463}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7865584726620063717
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3220536140995886375}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea23c6c9409577849b49d7f8612cb90a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::InteractableHelper
-  objectName: "\u041D\u0435\u0438\u0437\u0432\u0435\u0441\u0442\u043D\u044B\u0439
-    \u043E\u0431\u044A\u0435\u043A\u0442"
 --- !u!65 &1946198546267694820
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -402,6 +404,20 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.025192525, y: 0.034319144, z: 0.01399454}
   m_Center: {x: -0.06571739, y: 0.012335467, z: 0.08048548}
+--- !u!114 &647720863697021843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3220536140995886375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62e5595bf0fa8ae4281816e4062c8ac5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Kew
+  magnet: {fileID: 0}
+  flag: 0
 --- !u!1 &3773326532967836952
 GameObject:
   m_ObjectHideFlags: 0

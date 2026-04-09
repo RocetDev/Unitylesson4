@@ -14,11 +14,14 @@ public class PlayerInit : MonoBehaviour
         SpawnPosition = GetComponent<Transform>();
         GameObject player = Instantiate(PlayerPrebuf, SpawnPosition.position, SpawnPosition.rotation);
     
-        MovePlayer movePlayer = player.GetComponent<MovePlayer>();
-        movePlayer.SetupInputAsset(PlayerAsset);
+        // MovePlayer movePlayer = player.GetComponent<MovePlayer>();
+        // movePlayer.SetupInputAsset(PlayerAsset);
 
-        MouseLook mouseLook = player.GetComponent<MouseLook>();
-        mouseLook.SetupInputAsset(PlayerAsset);
+        // MouseLook mouseLook = player.GetComponent<MouseLook>();
+        // mouseLook.SetupInputAsset(PlayerAsset);
+
+        // RaycastSelector rayselector = player.GetComponent<RaycastSelector>();
+        // rayselector.SetupInputAsset(PlayerAsset);
     }
 
 
